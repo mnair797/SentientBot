@@ -57,13 +57,20 @@ class ViewController: MessagesViewController {
     }
     
     func getResponseFromMood(_ text: String) -> String {
+        print (text)
         let choices=["happy":["What makes you happy?",
                               "Glad to know that you are doing well",
                               "It is so good to see you being so positive"],
                      "sad":["What makes you sad?",
                             "Things will get better!!",
                             "I am so sorry"],
-                     "TODO":["T1","T2","T3","T4","T5"]
+                     "lonely":["What makes you sad?",
+                            "Things will get better!!",
+                            "I am so sorry"],
+                     "jealous":["What makes you sad?",
+                            "Things will get better!!",
+                            "I am so sorry"],
+                     "mad":["T1","T2","T3","T4","T5"]
         ]
         guard let m = choices[text] else {return "Missing response"}
         let r=Int.random(in: 0..<m.count)
