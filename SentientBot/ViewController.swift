@@ -18,7 +18,7 @@ class ViewController: MessagesViewController {
     var member: Member!
     var memberBot: Member!
     var prediction: String?
-    let uploadURL = "https://ea9733ptx9.execute-api.us-east-1.amazonaws.com/Predict/bf96e7b9-b9d6-4cc2-9a2d-c5e4c777a5f0"
+    let uploadURL = "https://l47syleshe.execute-api.us-east-1.amazonaws.com/Predict/8c4c67d7-e28b-4ebb-814b-5e5d11990a44"
     
     override func viewDidLoad() {
         super.viewDidLoad()
